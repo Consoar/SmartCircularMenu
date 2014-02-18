@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_cover"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button_anime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/button_fadein"
+        android:text="动画开关" />
+
+    <Button
+        android:id="@+id/button_fadein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_anime"
+        android:layout_alignBottom="@+id/button_anime"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/button_fadeout"
+        android:text="出现" />
+
+    <Button
+        android:id="@+id/button_fadeout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="17dp"
+        android:text="消失" />
+
+    <bos.consoar.smartcircularmenu.SmartCircularMenu
+        android:id="@+id/radial_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
