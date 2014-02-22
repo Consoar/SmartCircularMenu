@@ -68,15 +68,15 @@ public class SmartCircularMenuActivity extends Activity {
 				R.drawable.tt));
 		mMenu.addMenuItem(mInfo.getMenuID(), mInfo);
 		mMenu.setOrientation(SmartCircularMenu.HORIZONTAL_BOTTOM);
-		mMenu.setOnCircularClickListener(new onCircularClickListener() {
-			
-			@Override
-			public void onCircularButtonClick(View v) {
-				// TODO Auto-generated method stub
-				Toast.makeText(SmartCircularMenuActivity.this,
-						"单击Home", Toast.LENGTH_SHORT).show();
-			}
-		});
+//		mMenu.setOnCircularClickListener(new onCircularClickListener() {
+//			
+//			@Override
+//			public void onCircularButtonClick(View v) {
+//				// TODO Auto-generated method stub
+//				Toast.makeText(SmartCircularMenuActivity.this,
+//						"单击Home", Toast.LENGTH_SHORT).show();
+//			}
+//		});
 		mCamera.setOnSmartCircularMenuPressed(new OnSmartCircularMenuPressed() {
 			@Override
 			public void onMenuItemPressed() {
